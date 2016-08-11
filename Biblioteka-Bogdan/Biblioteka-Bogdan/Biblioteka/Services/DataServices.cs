@@ -29,5 +29,10 @@ namespace Services
         {
             return DatabaseOperations.SimpleDML("Biblioteka_Get_Oddaj_Ksiazke", new { idPoz = idPozycji, idCzyt = idCzytelnika });
         }
+
+        public DMLResult OrderBook(int idPozycji, int idCzytelnika)
+        {
+            return DatabaseOperations.SimpleDML("Biblioteka_Get_Wypozycz_Pozycje", new { idPoz = idPozycji, idCzyt = idCzytelnika });
+        }
     }
 }
