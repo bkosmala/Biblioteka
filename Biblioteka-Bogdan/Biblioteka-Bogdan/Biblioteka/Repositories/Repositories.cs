@@ -7,8 +7,9 @@ using Models;
 
 namespace Repositories
 {
-    public class Repositories
-    {        public List<string> GetListOfCategories()
+    public class Repository
+    {
+        public List<string> GetListOfCategories()
         {
             return DatabaseOperations.GetListOfString("Biblioteka_Get_Category_Names", null);
         }
@@ -21,6 +22,11 @@ namespace Repositories
         public bool GetAvailabilityForPosition(int idPozycji)
         {
             return DatabaseOperations.GetScalar<bool>("Biblioteka_Get_Dostepnosc_Pozycji", new { id = idPozycji });
+        }
+
+        public List<Pozycja> GetListOfDetailsPosition(int idPozycji)
+        {
+            return DatabaseOperations.GetCollection<Pozycja>("Biblioteka_Get_Szczegoly_O_Pozycji", new { idPoz= idPozycji})
         }
 
         public DMLResult ReturnBook(int idPozycji, int idCzytelnika)
