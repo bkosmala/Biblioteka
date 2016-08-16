@@ -8,13 +8,12 @@ using Models;
 using System.Net;
 using System.Net.Http;
 using System.Web;
-using Models.Result;
-
 
 namespace Services
 {
     public class DataServices 
     {
 
+        
     }
 }
