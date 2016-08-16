@@ -46,7 +46,8 @@ namespace Repositories
                                                                                       miejscowosc = czytelnik.Miejscowosc,
                                                                                       adres = czytelnik.Adres,
                                                                                       pesel = czytelnik.Pesel,
-                                                                                      telefon = czytelnik.Telefon});
+
+                telefon = czytelnik.Telefon});
         }
     }
 }
