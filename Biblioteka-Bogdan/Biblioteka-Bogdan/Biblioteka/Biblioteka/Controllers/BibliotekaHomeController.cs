@@ -11,7 +11,7 @@ namespace Biblioteka.Controllers
     public class BibliotekaHomeController : ApiController
     {
         // GET: api/BibliotekaHome
-        public IEnumerable<string> Get()
+        public List<string> Get()
         {
             return DataServices.GetListOfCategoriesServices();
         }
