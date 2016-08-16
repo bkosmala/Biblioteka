@@ -26,7 +26,7 @@ namespace Repositories
 
         public List<Pozycja> GetListOfDetailsPosition(int idPozycji)
         {
-            return DatabaseOperations.GetCollection<Pozycja>("Biblioteka_Get_Szczegoly_O_Pozycji", new { idPoz= idPozycji})
+            return DatabaseOperations.GetCollection<Pozycja>("Biblioteka_Get_Szczegoly_O_Pozycji", new { idPoz = idPozycji });
         }
 
         public DMLResult ReturnBook(int idPozycji, int idCzytelnika)
