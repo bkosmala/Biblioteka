@@ -9,7 +9,7 @@ namespace Repositories
 {
     public class Repository
     {
-        public List<string> GetListOfCategories()
+        public static List<string> GetListOfCategories()
         {
             return DatabaseOperations.GetListOfString("Biblioteka_Get_Category_Names", null);
         }
