@@ -13,7 +13,10 @@ namespace Services
 {
     public class DataServices 
     {
+        public static List<string> GetListOfCategoriesServices()
+        {
+            return Repository.GetListOfCategories();
+        }
 
-        
     }
 }

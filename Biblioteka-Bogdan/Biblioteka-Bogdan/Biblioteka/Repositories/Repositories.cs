@@ -9,7 +9,7 @@ namespace Repositories
 {
     public class Repository
     {
-        public List<string> GetListOfCategories()
+        public static List<string> GetListOfCategories()
         {
             return DatabaseOperations.GetListOfString("Biblioteka_Get_Category_Names", null);
         }
@@ -46,7 +46,8 @@ namespace Repositories
                                                                                       miejscowosc = czytelnik.Miejscowosc,
                                                                                       adres = czytelnik.Adres,
                                                                                       pesel = czytelnik.Pesel,
-                                                                                      telefon = czytelnik.Telefon});
+
+                telefon = czytelnik.Telefon});
         }
     }
 }
